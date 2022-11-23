@@ -1,6 +1,8 @@
 # Learning spatial interaction representation with Heterogeneous Graph Convolution Networks for urban land-use inference
 Pytorch implementation of our paper “Learning spatial interaction representation with Heterogeneous Graph Convolution Networks for urban land-use inference”. We propose a novel framework, Heterogeneous Graph Convolution Networks (HGCN) to explicitly account for the spatial demand and supply components embedded in spatial interaction data, in addition to local characteristic features, for urban land-use inference.
 
+![Pipeline](assets\Framework.png)
+
 ## 1. Requirements
 - pytorch
 - numpy
@@ -18,7 +20,7 @@ We provide [London Dataset](./data/london_data/) in this repository.
 | ls_edge.pkl    | Adjacency edge list                           | [786,786] |
 | df_dis.csv     | Physical distance between spatial units       | [786,786] |
 
- Due to commercial/legal restriction, we  provide [mock data](./data/shenzhen_data/) for Shenzhen Dataset in this repository. Due to capacity limitation, we provide the data download address [[HGCN (figshare.com)](https://figshare.com/s/001e24dda6ff9f840b56)].
+Due to commercial/legal restriction, we  provide [mock data](./data/shenzhen_data/) for Shenzhen Dataset in this repository. Due to capacity limitation, we provide the data download address [[HGCN (figshare.com)](https://figshare.com/s/001e24dda6ff9f840b56)].
 
 | File Name          | Content                                            | Dim           |
 | :----------------- | :------------------------------------------------- | :------------ |
@@ -36,7 +38,7 @@ You can reproduce the results in London according to the following instructions.
 
 #### 3.1.1 Results in the paper
 
-![Comparison of models](.\results\Comparison of models.png)
+![Comparison of models](assets\Comparison_of_models.png)
 
 #### 3.1.2 Code
 
@@ -80,7 +82,7 @@ python train.py --k-fold 30 --train_size 0.7 --train_mode 14 --dataset 1
 
 #### 3.2.1 Results in the paper
 
-![Vector dimensions for spatial interaction and dependence features](.\results\Vector dimensions for spatial interaction and dependence features.png)
+![Vector dimensions for spatial interaction and dependence features](assets\Vector_dimensions_for_spatial_interaction_and_dependence_features.png)
 
 #### 3.2.2 Code
 
@@ -100,7 +102,7 @@ python train.py --k-fold 30 --train_size 0.7 --train_mode 14 --dataset 1 --propo
 
 #### 3.3.1 Results in the paper（KL Divergence）
 
-![Size of training set](.\results\Size of training set.png)
+![Size of training set](assets\Size_of_training_set.png)
 
 #### 3.3.2 Code
 
